@@ -75,7 +75,6 @@ through `DeviceIoControl`.
 | Symbolic-link name | `\DosDevices\RTCore64` |
 | User-mode path | `\\.\RTCore64` |
 | Standard-user access | `Yes — documented for authenticated local users` |
-| Independent access test | `Not performed` |
 | IOCTL transfer method | `METHOD_BUFFERED` |
 | IOCTL access requirement | `FILE_ANY_ACCESS` |
 | Associated vulnerability | `CVE-2019-16098` |
@@ -84,8 +83,7 @@ The analyzed IOCTLs use `FILE_ANY_ACCESS`, meaning they do not require a handle
 opened with specific read or write access rights. The device security descriptor
 still determines whether a process can obtain the original device handle.
 
-Standard-user access is a documented characteristic of CVE-2019-16098 but was
-not independently retested as part of this static-analysis project.
+Standard-user access is a documented characteristic of CVE-2019-16098.
 
 ---
 
