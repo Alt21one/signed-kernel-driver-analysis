@@ -38,13 +38,7 @@ device-control dispatch handler.
 
 ## Security Impact
 
-Potential consequences include:
-
-- Sensitive kernel-memory disclosure
-- Modification of privileged kernel state
-- Local privilege escalation
-- Security-boundary bypass
-- System instability or denial of service
+RTCore64.sys allows a process to perform powerful kernel-level memory operations that bypass normal Windows security checks. By abusing these capabilities, a process can access another process's memory without opening a standard process handle, potentially gain SYSTEM privileges, disable antivirus or EDR software, bypass kernel protections, modify sensitive system memory, and assist in hiding or executing malicious code.
 
 ## Recommended Mitigations
 
