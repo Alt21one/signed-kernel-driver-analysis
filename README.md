@@ -38,7 +38,7 @@ device-control dispatch handler.
 
 ## Security Impact
 
-```RTCore64.sys``` lets a process that can open the device request reads and writes at caller-chosen virtual addresses. exposes powerful kernel-level memory and hardware operations to user-mode programs without sufficient restrictions. Attackers can abuse these capabilities to modify protected system memory, gain SYSTEM privileges, disable with antivirus or EDR software, bypass kernel protections, or crash Windows.
+```RTCore64.sys``` lets a process that can open the device request reads and writes at caller-chosen virtual addresses. exposes powerful kernel-level memory and hardware operations to user-mode programs without sufficient restrictions. Attackers can abuse these capabilities to modify protected system memory, gain SYSTEM privileges, interfere with or potentially disable with antivirus or EDR software, bypass kernel protections, or crash Windows.
 
 ## Recommended Mitigations
 
