@@ -33,7 +33,8 @@ functionality to read or modify privileged memory.
 The driver creates a device object, exposes a symbolic link, and registers its
 device-control dispatch handler.
 
-![DriverEntry analysis](images/driver-entry-analysis.png)
+<img width="1408" height="548" alt="image" src="https://github.com/user-attachments/assets/927db871-cba5-4f86-bb7b-db66dbe1bc01" />
+
 
 ## Security Impact
 
