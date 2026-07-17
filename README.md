@@ -38,7 +38,7 @@ device-control dispatch handler.
 
 ## Security Impact
 
-RTCore64.sys allows a process to perform powerful kernel-level memory operations that bypass normal Windows security checks. By abusing these capabilities, a process can access another process's memory without opening a standard process handle, potentially gain SYSTEM privileges, disable antivirus or EDR software, bypass kernel protections, modify sensitive system memory, and assist in hiding or executing malicious code.
+RTCore64.sys exposes powerful kernel-level memory and hardware operations to user-mode programs without sufficient restrictions. Attackers can abuse these capabilities to modify protected system memory, gain SYSTEM privileges, interfere with antivirus or EDR software, bypass kernel protections, or crash Windows.
 
 ## Recommended Mitigations
 
